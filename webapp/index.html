@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Digital Notary</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Header-->
+        <header class="masthead d-flex align-items-center">
+            <div class="container px-4 px-lg-5 text-center">
+                <h1 class="mb-1">Digital Notary</h1>
+                <h3 class="mb-5"><em>Decentralized File Management</em></h3>
+                <body>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-xs-12" style="height:25px;"></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm">
+                        <div class="form-group">
+                          <label class="custom-file">
+                            <input type="file" id="hashFile" class="custom-file-input">
+                            <span class="custom-file-control" data-content="Choose file..."></span>
+                          </label>
+                        </div>
+                        <div class="form-group">
+                          <br>
+                          <button type='button' id="sendHashButton" onclick="reg()" class="btn btn-primary"/>
+                            Register to Blockchain
+                          </button>
+                          <button type='button' id= "findHashButton" onclick="find()" class="btn btn-primary"/>
+                            Search on Blockchain
+                          </button>    
+                        </div>
+                          <br>
+                          <div id=responseText></div>
+                          <br>
+                          <a href="ipfs.html">Continue to upload IPFS.</a>
+                        </div>   
+                      </div>
+                    </div>
+                    <head>
+                     
+                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/web3@1.2/dist/web3.min.js"></script>
+                <script src="sha256.js"></script>
+                <script src="notaryWebLib.js"></script>
+                <script src="app.js"></script>
+                </body>
+            </div>
+        </header>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

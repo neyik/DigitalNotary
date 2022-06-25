@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>IPFS to File Upload</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Header-->
+        <header class="masthead d-flex align-items-center">
+            <div class="container px-4 px-lg-5 text-center">
+                <h1 class="mb-1">IPFS System</h1>
+                <h3 class="mb-5"><em>Upload File to IPFS System</em></h3>
+                <body>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-xs-12" style="height:25px;"></div>
+                    </div>
+                    <head>
+                      <!-- Moralis SDK code -->
+                      <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+                      <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+                    </head>
+                    <body>
+                      <h3>File Description</h3>
+                      <button onclick="login()" class="btn btn-primary">Login</button>
+                      <input type="text" name="metadataName" id="metadataName" placeholder="Name"><br>
+                      <textarea name="metadataDescription" id="metadataDescription" cols="30" rows="2"></textarea><br>
+                      <input type="file" name= "fileInput" id="fileInput"><br>
+                      <button onclick=gogogo() class="btn btn-primary">Upload</button> 
+                    </div>
+                    <br>
+
+
+
+                    <button id="btn">Click Here!</button>
+  
+                    
+    <p>
+        Button Clicked <span 
+        id="display">0</span> Times
+    </p>
+  
+    <script type="text/javascript">
+        var count = 0;
+        var btn = document.getElementById("btn");
+        var disp = document.getElementById("display");
+  
+        btn.onclick = function () {
+            count++;
+            disp.innerHTML = count;
+        }
+
+        </script>
+                    <div id=responseText></div>
+                    <br>
+                    <a href="index.html">Back to register Ethereum Blockchain.</a>
+                  </div>  
+                      <script>  
+                    </script>
+                      </script>
+                    </body>    
+                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/web3@1.2/dist/web3.min.js"></script>
+                <script src="sha256.js"></script>
+                <script src="notaryWebLib.js"></script>
+                <script src="app.js"></script>
+                </body>
+            </div>
+        </header>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
